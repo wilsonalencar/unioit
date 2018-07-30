@@ -246,7 +246,7 @@ ul.homenav li a:hover{ color:#E65000; text-decoration: none;
 	}
 	
 	.og-expander-inner {
-		padding: 50px 30px;
+		padding: 70px 30px;
 		height: 100%;
 	}
 	
@@ -328,6 +328,7 @@ ul.homenav li a:hover{ color:#E65000; text-decoration: none;
 	}
 	
 	.og-fullimg img {
+		margin-top: 15px;
 		display: inline-block;
 		max-height: 90%;
 		max-width: 90%;
@@ -394,8 +395,8 @@ ul.homenav li a:hover{ color:#E65000; text-decoration: none;
 	.og-details ul.thumbs a img {
 	border: 2px solid #292929!important;
 	padding: 1px;
-	height: 80px;
-	width: 80px;
+	height: auto;
+	width: 100px;
 	}
 	
 	.og-details ul.thumbs a.active img {
@@ -619,5 +620,8 @@ footer  { width: 100%; padding: 20px 0; background: #333; text-align: center; }
 	#works, #about, #timeline, #contact {padding-left:10px; padding-right:10px;}
 	#home {background:url('../img/bg_home.jpg') no-repeat center center scroll; -webkit-background-size: auto; -moz-background-size: auto; -o-background-size: auto; background-size: auto; background-attachment: scroll;}
 }
-	
+
+.logos-cliente img{
+	max-width: 95px;
+}
 	
