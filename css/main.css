@@ -54,10 +54,16 @@ h2 {margin-top: 30px;}
 /* HEADER
 ============================== */
 .navbar { width: 100%; position: relative; margin: 0 0 20px; }
-.navbar-inner { -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; border: none; border-bottom: 1px #ccc solid; background: #fff; 
--webkit-box-shadow: none;
--moz-box-shadow: none;
-box-shadow: none; }
+.navbar-inner { 
+	-webkit-border-radius: 0; 
+	-moz-border-radius: 0; 
+	border-radius: 0; 
+	border: none; 
+	border-bottom: 1px #ccc solid; 
+	background: #fff; 
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none; }
 	
 	.sticky-wrapper { z-index: 999; width: 100%; position: relative; margin: 0; }
 	.sticky-wrapper .navbar { margin-bottom: 0; }
@@ -566,7 +572,7 @@ footer  { width: 100%; padding: 20px 0; background: #333; text-align: center; }
 }
 
 @media only screen and (max-width: 979px) {
-	#home .containerblack {margin-top: 50px;}
+	#home .containerblack {margin-top: 100px;}
 	#slider  { font-size: 28px; }
 	#slider .slide { height: 50px; line-height: 50px;}
 	.container p.lead.twocolumns1 {max-width:315px;}
@@ -612,16 +618,139 @@ footer  { width: 100%; padding: 20px 0; background: #333; text-align: center; }
 	.container p.lead.twocolumns1 {max-width:470px; padding-left:20px; padding-right:20px; font-size:16px; line-height:24px;}
 	.container p.lead.twocolumns2 {max-width:470px; padding-left:20px; padding-right:20px; margin-left:0px; margin-bottom:10px; font-size:16px; line-height:24px;}
 	#slider  { font-size: 18px; }
-	#slider .slide { height: 30px; line-height: 30px;}
-	#home .containerblack {height: 250px; padding: 30px 0 30px 0; margin-top: 30px;}
+	#slider .slide { 
+		height: auto;
+    line-height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+	}
+	#home .containerblack {height: 290px; padding: 30px 0 30px 0; margin-top: 30px;}
 	a#arrow_down {width: 200px; margin-left: -100px; font-size: 16px;}
 	.container.txtblock p.lead {font-size: 14px; line-height: 24px; padding-right: 20px;}
-	.navbar, .sticky-wrapper {display:none;}
+	.navbar{
+		display: block;
+	}
 	#works, #about, #timeline, #contact {padding-left:10px; padding-right:10px;}
-	#home {background:url('../img/bg_home.jpg') no-repeat center center scroll; -webkit-background-size: auto; -moz-background-size: auto; -o-background-size: auto; background-size: auto; background-attachment: scroll;}
+	#home {padding-top: 25%;}
 }
 
 .logos-cliente img{
 	max-width: 95px;
 }
+
+pre {
+	tab-size: 8;
+}
+
+.menu-mobile {
+	display: none;
+}
+
+.sticky-wrapper {
+	height: 0px !important;
+}
+
+.brand img {
+	width: 145px;
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 650px) {
+	.side-collapse-container{
+			width: 100%;
+			position:relative;
+			left:0;
+			transition:left .4s;
+	}
+	.side-collapse-container.out{
+			left:200px;
+	}
+	.side-collapse {
+			top:65px;
+			width: 100%;
+			position:fixed;
+			overflow:hidden;
+			/* transition: width .4s; */
+			background: #E65000;
+			color: #fff;
+	}
+	.side-collapse.in {
+			width:0;
+	}
+	.menu-mobile {
+		display: block !important;
+		display: block !important;
+    height: 65px;
+		background: #fff;
+	}
+
+	.navbar-toggle {
+    background: transparent;
+    border: 0px;
+    height: 65px;
+    padding-left: 10px;
+    padding-right: 10px;
+		width: 58px;
+		padding-top: 0px !important;
+		cursor: pointer;
+	}
+
+	.navbar-toggle:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+	}
+
+	.menu-desktop {
+		display: none;
+	}
+
+	.navbar .nav>li {
+    float: none;
+	}
+
+	.icone-menu-mobile {
+		width: 18px;
+	}
 	
+	.navbar-toggle{
+		background: transparent;
+		border: 0px;
+		padding-top: 15px;
+	}
+	
+	.navbar ul.nav {
+			padding-top: 15px;
+			padding-bottom: 15px;
+	}
+	
+	.navbar ul.nav li a{
+		text-shadow: none;
+		font-weight: 500;
+    font-size: 12px;
+    text-transform: capitalize;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.navbar ul.nav li.active a{
+		font-weight: 600;
+		color: #fff !important;
+		transition: none;
+	}
+
+	.logo-header-menu{
+		width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+	}
+	.logo-header-menu img{
+		width: 120px;
+    margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 526px) {
+	.container.txtblock p.lead {
+		padding-left: 65px !important;
+		background-size: 40px;
+	}
+}

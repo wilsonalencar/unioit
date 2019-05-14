@@ -52,6 +52,30 @@
     </script>
 </head>
 <body data-spy="scroll" data-target=".navbar">
+
+    <header role="banner" class="navbar navbar-fixed-top menu-mobile">
+      <div class="container">
+        <div class="navbar-header">
+          <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">
+            <img src="img/icons/menu.svg" class="icone-menu-mobile">
+          </button>
+          <div class="logo-header-menu">
+            <img src="img/logo-mobile.png">
+          </div>
+        </div>
+        <div class="navbar-inverse side-collapse in">
+          <nav role="navigation" class="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#home" class="linkmenu">Home</a></li>
+                <li><a href="#works" class="linkmenu">Projetos</a></li>
+                <li><a href="#about" class="linkmenu">Sobre</a></li>
+                <li><a href="#timeline" class="linkmenu">Timeline</a></li>
+                <li><a href="#contact" class="linkmenu">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
     
     <section id="home">
         <div class="container">
@@ -75,10 +99,10 @@
         </div><!-- end: .containter -->                    	
     </section><!-- end: #home -->
     
-    <div class="navbar">
+    <div class="navbar menu-desktop">
         <div class="navbar-inner">
             <div class="container">
-                <a class="brand" href="#"><img src="img/logo.png"></a>
+                <a class="brand" href="#"><img src="img/logo-mobile.png"></a>
                 <div class="pull-right">
                     <ul class="nav">
                         <li><a href="#home">Home</a></li>
@@ -105,10 +129,10 @@
                         <img src="portifolio/checkok/thumb.png" alt="img01"/><div>CheckOk</div>
                     </a>
                     <div class="thumbs">
-                        <a href="#" data-largesrc="portifolio/checkok/inicial.png" data-thumb="portifolio/checkok/inicial.png" data-title="Web Service de consultas" data-description=" - Trabalhamos no desenvolvimento de Web Service C# para realizar consultas via Serasa e tratar informações com retorno xml.<br>
+                        <a href="#" data-largesrc="portifolio/checkok/inicial.png" data-thumb="portifolio/checkok/inicial-peq.png" data-title="Web Service de consultas" data-description=" - Trabalhamos no desenvolvimento de Web Service C# para realizar consultas via Serasa e tratar informações com retorno xml.<br>
                             - Participação no desenvolvimento da ferramenta de chat para atendimento ao cliente."></a>
                             
-                            <a href="#" data-largesrc="portifolio/checkok/atendimento.png" data-thumb="portifolio/checkok/atendimento.png" data-title="Atendimento ao cliente" data-description="Sistema de chat para atendimento ao cliente."></a>
+                            <a href="#" data-largesrc="portifolio/checkok/atendimento.png" data-thumb="portifolio/checkok/atendimento-peq.png" data-title="Atendimento ao cliente" data-description="Sistema de chat para atendimento ao cliente."></a>
                             
                     </div>
                 </li>
@@ -117,10 +141,10 @@
                         <img src="portifolio/semhora/thumb.png" width="250" height="250" /><div>Sem Hora</div>
                     </a>
                     <div class="thumbs">
-                        <a href="#" data-largesrc="portifolio/semhora/inicial-atual.png" data-thumb="portifolio/semhora/inicial-atual.png" data-title="Sistema" data-description="Site da empresa que oferece a solução desde a plataforma de venda do ingresso (aplicativo, website, aplicativo parceiro, website parceiro), gráfica interna, controle de acesso, relatórios personalizados, marketing digital e muito mais."></a>
-                        <a href="#" data-largesrc="portifolio/semhora/cms_login.png" data-thumb="portifolio/semhora/cms_login.png" data-title="Gerenciamento de conteúdo" data-description="Sistema para controle de vendas e geração de relatórios dos clientes."></a>
-                        <a href="#" data-largesrc="portifolio/semhora/pagamento.png" data-thumb="portifolio/semhora/pagamento.png" data-title="Pagamento" data-description="Integração com sistemas de pagamento."></a>
-                        <a href="#" data-largesrc="portifolio/semhora/localizacao.png" data-thumb="portifolio/semhora/localizacao.png" data-title="Mapa" data-description="Mapa de localização utilizando API."></a>                    
+                        <a href="#" data-largesrc="portifolio/semhora/inicial-atual.png" data-thumb="portifolio/semhora/inicial-atual-peq.png" data-title="Sistema" data-description="Site da empresa que oferece a solução desde a plataforma de venda do ingresso (aplicativo, website, aplicativo parceiro, website parceiro), gráfica interna, controle de acesso, relatórios personalizados, marketing digital e muito mais."></a>
+                        <a href="#" data-largesrc="portifolio/semhora/cms_login.png" data-thumb="portifolio/semhora/cms_login-peq.png" data-title="Gerenciamento de conteúdo" data-description="Sistema para controle de vendas e geração de relatórios dos clientes."></a>
+                        <a href="#" data-largesrc="portifolio/semhora/pagamento.png" data-thumb="portifolio/semhora/pagamento-peq.png" data-title="Pagamento" data-description="Integração com sistemas de pagamento."></a>
+                        <a href="#" data-largesrc="portifolio/semhora/localizacao.png" data-thumb="portifolio/semhora/localizacao-peq.png" data-title="Mapa" data-description="Mapa de localização utilizando API."></a>                    
                     </div>
                 </li>
                 <li>
@@ -128,8 +152,8 @@
                         <img src="portifolio/paynet/thumb.png" alt="img01"/><div>Paynet</div>
                     </a>
                     <div class="thumbs">
-                        <a href="#" data-largesrc="portifolio/paynet/inicial.png" data-thumb="portifolio/paynet/inicial.png" data-title="Sistema" data-description="Alocação de recursos para manutenção e desenvolvimento de novos módulos de sistema do cliente."></a>                    
-                        <a href="#" data-largesrc="portifolio/paynet/alocacao.png" data-thumb="portifolio/paynet/alocacao.png" data-title="Alocação" data-description="Profissionais focados e comprometidos com resultado, alocação de recursos é uma de nossas especialidades."></a>
+                        <a href="#" data-largesrc="portifolio/paynet/inicial.png" data-thumb="portifolio/paynet/inicial-peq.png" data-title="Sistema" data-description="Alocação de recursos para manutenção e desenvolvimento de novos módulos de sistema do cliente."></a>                    
+                        <a href="#" data-largesrc="portifolio/paynet/alocacao.png" data-thumb="portifolio/paynet/alocacao-peq.png" data-title="Alocação" data-description="Profissionais focados e comprometidos com resultado, alocação de recursos é uma de nossas especialidades."></a>
                                 
                     </div>
                 </li>
@@ -138,9 +162,9 @@
                         <img src="portifolio/sennit/thumb.png" alt="img01"/><div>Sennit</div>
                     </a>
                     <div class="thumbs">
-                        <a href="#" data-largesrc="portifolio/sennit/inicial.png" data-thumb="portifolio/sennit/inicial.png" data-title="Alocação" data-description="Prestação de serviço como recurso alocado na empresa Movida / JSL."></a>
+                        <a href="#" data-largesrc="portifolio/sennit/inicial.png" data-thumb="portifolio/sennit/inicial-peq.png" data-title="Alocação" data-description="Prestação de serviço como recurso alocado na empresa Movida / JSL."></a>
                             
-                            <a href="#" data-largesrc="portifolio/sennit/projeto-principal.png" data-thumb="portifolio/sennit/projeto-principal.png" data-title="Principal Projeto GTF" data-description="Otimização de todo o processo de entrada e saída de veículos da empresa, desde a compra, implantação para um cliente, atendimento ao cliente (SAC), processo de manutenção controlando avarias, ordem de serviço e pagamentos ao cliente e fornecedor. Desmobilização do veículo com integração em portal de seminovos."></a>
+                            <a href="#" data-largesrc="portifolio/sennit/projeto-principal.png" data-thumb="portifolio/sennit/projeto-principal-peq.png" data-title="Principal Projeto GTF" data-description="Otimização de todo o processo de entrada e saída de veículos da empresa, desde a compra, implantação para um cliente, atendimento ao cliente (SAC), processo de manutenção controlando avarias, ordem de serviço e pagamentos ao cliente e fornecedor. Desmobilização do veículo com integração em portal de seminovos."></a>
                             
                     </div>
                 </li>
@@ -149,11 +173,40 @@
                         <img src="portifolio/bravop/thumb.png" width="250" height="250" /><div>Bravo</div>
                     </a>
                     <div class="thumbs">
-                        <a href="#" data-largesrc="portifolio/bravop/inicial.png" data-thumb="portifolio/bravop/inicial.png" data-title="Alocação" data-description="Alocação de recursos para manutenção e desenvolvimento de novos módulos de sistema do cliente."></a>
-                        <a href="#" data-largesrc="portifolio/bravop/sistema.png" data-thumb="portifolio/bravop/sistema.png" data-title="Sistema" data-description="Sistema para gestão de projetos."></a>                  
+                        <a href="#" data-largesrc="portifolio/bravop/inicial.png" data-thumb="portifolio/bravop/inicial-peq.png" data-title="Alocação" data-description="Alocação de recursos para manutenção e desenvolvimento de novos módulos de sistema do cliente."></a>
+                        <a href="#" data-largesrc="portifolio/bravop/sistema.png" data-thumb="portifolio/bravop/sistema-peq.png" data-title="Sistema" data-description="Sistema para gestão de projetos."></a>                  
+                    </div>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/logics4u-assessoria-e-consultoria/about/" data-largesrc="portifolio/logics4u/inicial.png" data-title="Alocação" data-description="Alocação de recursos.">
+                        <img src="portifolio/logics4u/thumb.png" width="250" height="250" /><div>Logics4u</div>
+                    </a>
+                    <div class="thumbs">
+                        <a href="#" data-largesrc="portifolio/logics4u/inicial.png" data-thumb="portifolio/logics4u/inicial-peq.png" data-title="Alocação" data-description="Alocação de recursos"></a>
+                        <a href="#" data-largesrc="portifolio/logics4u/item.png" data-thumb="portifolio/logics4u/item-peq.png" data-title="Desenvolvimento" data-description="Desenvolvimento de sistemas de pagamentos."></a>                  
                     </div>
                 </li>
 
+                <li>
+                    <a href="https://csbrasilservicos.com.br/" data-largesrc="portifolio/csbrasil/item.png" data-title="Desenvolvimento" data-description="Desenvolvimento de aplicativo.">
+                        <img src="portifolio/csbrasil/thumb.png" width="250" height="250" /><div>CS Brasil serviços</div>
+                    </a>
+                    <div class="thumbs">
+                        <a href="#" data-largesrc="portifolio/csbrasil/item.png" data-thumb="portifolio/csbrasil/item-peq.png" data-title="Desenvolvimento" data-description="Desenvolvimento de aplicativo interno."></a>  
+                        <!-- <a href="#" data-largesrc="portifolio/csbrasil/inicial.png" data-thumb="portifolio/csbrasil/inicial-peq.png" data-title="Alocação" data-description="Alocação de recursos para manutenção e desenvolvimento de novos módulos de sistema do cliente."></a>                 -->
+                    </div>
+                </li>
+
+
+                <li>
+                        <a href="https://csbrasilservicos.com.br/" data-largesrc="portifolio/qubox/inicial.png" data-title="Desenvolvimento" data-description="Desenvolvimento de projetos e alocação de recursos.">
+                            <img src="portifolio/qubox/thumb.png" width="250" height="250" /><div>QUBOX</div>
+                        </a>
+                        <div class="thumbs">
+                            <a href="#" data-largesrc="portifolio/qubox/inicial.png" data-thumb="portifolio/qubox/inicial-peq.png" data-title="Desenvolvimento" data-description="Desenvolvimento de projetos"></a>
+                            <a href="#" data-largesrc="portifolio/qubox/item.png" data-thumb="portifolio/qubox/item-peq.png" data-title="Alocação" data-description="Alocação de recursos"></a>                  
+                        </div>
+                    </li>
             </ul>
         </div><!-- end: #works_items -->
     </section><!-- end: #works -->
@@ -294,6 +347,21 @@
             <script src="js/jquery.scrollto.js"></script>
             <script src="js/grid.js"></script>
             <script>
+                $(document).ready(function() {   
+                    var sideslider = $('[data-toggle=collapse-side]');
+                    var linkmenu = $('.linkmenu');
+                    var sel = sideslider.attr('data-target');
+                    var sel2 = sideslider.attr('data-target-2');
+                    sideslider.click(function(event){
+                        $(sel).toggleClass('in');
+                        $(sel2).toggleClass('out');
+                    });
+                    linkmenu.click(function(event){
+                        $(sel).toggleClass('in');
+                        $(sel2).toggleClass('out');
+                    });
+                });
+
                 $('#slider').cycle({
                     fx : 'scrollVert',
                     timeout: 3000,
